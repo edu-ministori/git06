@@ -90,7 +90,7 @@
 - ol(Ordered List) : 순서있는 목록
 - li(List Item) : 목록 항목
 
-** 포함관계(Nested Structure)
+\*\* 포함관계(Nested Structure)
 
 - 태그안에 다른 태그들이 포함되는 것
 - 포함하는 요소
@@ -101,6 +101,7 @@
   - 자손요소(Descendant)
 - 옆에 나란히 있는 요소
   - 형제요소(sibling)
+
 ```
 (1) <html>
 (2)   <body>
@@ -111,9 +112,10 @@
       </body>
     </html>
 ```
+
 (1) 조상 요소 | 기준 요소 | 조상 요소
 (2) 조상 요소 | 자식 요소 | 부모 요소
-(3)          | 자손 요소 | 형제 요소
+(3) | 자손 요소 | 형제 요소
 (4) 부모 요소 | 자손 요소 | 기준 요소
 (5) 기준 요소 | 자손 요소 | 자식 요소
 
@@ -131,7 +133,6 @@
 - tr(table row) : 행
 - th(table header) : 제목
 - td(table data) : 칸(열)
-
 
 #### hyper link(하이퍼링크)
 
@@ -151,6 +152,7 @@
 - 기본 속성
   - src(source) : 이미지 파일 이름, 위치
   - alt(alternate text) : 대체 텍스트 - 이미지가 화면에 표시되지 않을때, screen reader
+
 ```
 <img src="photo.jpg" alt="제주도 서귀포 바닷가 배경 사진">
 ```
@@ -159,7 +161,9 @@
 
 - video, source
 - 속성
+
   - video 태그 : on/off 형태 attribute
+
     - controls : 동영상 제어 버튼
     - autoplay : 자동재생
     - muted : 음소거
@@ -174,6 +178,19 @@
 ## HTML Structure
 
 ### Semantic
+
+- header
+  - logo, login ...
+- nav(igation)
+  - menu
+- section
+  - 본문 영역
+- article
+  - 본문 영역
+- aside
+  - 본문 영역, 부수적인 컨텐츠
+- footer
+  - 연락처, 주소, 회사 이름 ...
 
 ### Layout
 
