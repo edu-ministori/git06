@@ -438,3 +438,24 @@ p{
 - 구글 폰트
 
 - 폰트 종류(저작권)
+  - 폰트 파일 포함 여부
+
+#### Font size
+
+- font-size
+- 폰트 크기
+- px
+
+#### Font Style
+
+- font-style
+- 기울임꼴 설정
+- italic 값
+
+#### Font weight
+
+- font-weight
+- 굵기
+- normal/bold
+- 단위없는 100단위 숫자 값 사용
+
