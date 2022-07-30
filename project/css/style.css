@@ -63,6 +63,7 @@ font-family: 'Noto Sans KR', sans-serif; */
 }
 
 .gnb-list-item{
+  height:60px;
   margin-left:60px;
   position:relative;
 }
@@ -81,6 +82,11 @@ font-family: 'Noto Sans KR', sans-serif; */
   padding:0 10px;
   border:1px solid #333;
   top:45px;
+  display:none;
+}
+
+.gnb-depth2.active{
+  display:block;
 }
 
 .gnb-depth2-item{
