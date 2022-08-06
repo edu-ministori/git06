@@ -504,6 +504,37 @@ a:active{}
   - width/height : 적용 안됨
   - margin : 위아래 적용 안됨, 좌우 적용됨
 
+- 박스 크기 계산
+  - 박스 모델 구성요소(width/height + padding + border)의 크기 합 => 박스의 전체 크기
+
+Ex) width:300px, padding 4방향 모두 20px, border 4방향 1px, margin 4방향 10px
+=> 박스의 실제 크기 : 300 + 40 + 2 = 342px
+
+- box-sizing 속성
+  - width의 기준을 content 또는 전체크기 중에 선택
+
+```
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid black;
+  box-sizing:content-box; /* default */
+}
+
+300 + 40 + 2 = 342px /* width:300px => content 영역의 크기 */
+
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid black;
+  box-sizing:border-box;
+}
+
+x + 40 + 2 = 300px /* width:300px => box 전체 크기 */ 
+                   /* content 영역의 크기 : x = 300 - 40 - 2 */
+
+```
+
 ##### width/height
 
 - block 요소

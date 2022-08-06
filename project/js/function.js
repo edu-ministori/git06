@@ -1,3 +1,4 @@
+// menu mouse over
 let gnbListLink = document.querySelectorAll('.gnb-list-link');
 let gnbDepth2 = document.querySelectorAll('.gnb-depth2');
 let gnb = document.querySelector('.gnb');
@@ -11,3 +12,9 @@ for(let i=0;i<gnbListLink.length;i++){
     gnbDepth2[i].classList.remove('active');
   });
 }
+
+// hamburger button
+let hamburgerBtn = document.querySelector('.hamburger');
+hamburgerBtn.addEventListener('click', function(){
+  gnb.classList.toggle('active');
+});
